@@ -9,7 +9,7 @@ body {
 h1 {
     text-decoration: underline;
     background-color: white;
-    
+
 }
 
 
@@ -169,7 +169,7 @@ h1 {
 /* -- decorate the button -- */
 
 .main-bt button {
-    background-color : transparent;
+    background-color: transparent;
     /* Green background */
     border: 1px solid rgb(255, 255, 255);
     /* White border */
@@ -256,7 +256,7 @@ button:nth-of-type(3):hover {
     background-color: red;
     color: white;
     transition: 1s ease-in-out;
-  background: #4F95DA;
+    background: #4F95DA;
 }
 
 /* hover effect for button 4 */
@@ -266,13 +266,14 @@ button:nth-of-type(4):hover {
     box-shadow: none;
 }
 
-.middle{
-   display:inline-flex;
-    transform: translate(-50%,-50%);
+.middle {
+    display: inline-flex;
+    transform: translate(-50%, -50%);
     margin-left: 40%;
     margin-top: 30px;
-  }
-  .btn{
+}
+
+.btn {
     position: relative;
     display: block;
     color: white;
@@ -286,52 +287,90 @@ button:nth-of-type(4):hover {
     overflow: hidden;
     transition: 1s all ease;
     background-color: transparent;
-  }
-  .btn::before{
+}
+
+.btn::before {
     background: #ff7675;
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: -1;
     transition: all 0.6s ease;
-  }
-  
-  .bt5::before{
+}
+
+.bt5::before {
     width: 0%;
     height: 100%;
-  }
-  
-  .bt5:hover::before{
+}
+
+.bt5:hover::before {
     width: 100%;
-  }
-  
-  
-  .bt6::before{
+}
+
+
+.bt6::before {
     width: 100%;
     height: 0%;
-  }
-  .bt6:hover::before{
+}
+
+.bt6:hover::before {
     height: 100%;
-  }
-  
-  .bt7::before{
+}
+
+.bt7::before {
     width: 100%;
     height: 0%;
-    transform: translate(-50%,-50%) rotate(45deg);
-  }
-  .bt7:hover::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.bt7:hover::before {
     height: 380%;
-  }
-  
-  .bt8::before{
+}
+
+.bt8::before {
     width: 100%;
     height: 0%;
-    transform: translate(-50%,-50%) rotate(-45deg);
-  }
-  .bt8:hover::before{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.bt8:hover::before {
     height: 380%;
-  }
+}
 
 
+.circle {
+    transition: 1s ease;
+    width: 20%;
+    height: auto;
+   
+}
+
+.circle:hover {
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+.fadein {
+    opacity: 0.3;
+    transition: 1s ease;
+    width: 20%;
+    height: auto;
+    
+}
+
+.fadein:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+
+.img-section {
+display: flex;
+justify-content: center;
+}
+
+img {
+    margin: 10px;
+}
